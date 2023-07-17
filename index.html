@@ -9,17 +9,77 @@
 
 <body>
     <h1 id="show">we are learing js</h1>
-    <p id="greek">Hellow greekshow</p>
-    <p id="find">bye greek show</p>
+    <p id="greek">my name
+        <span> nspv</span>
+        <em>world</em>
+        <span>nothing</span>
+    </p>
+
+    <p>nilu patel</p>
+    <div>
+        <p>ns</p>
+        <p>spv</p>
+    </div>
+
 
     <script>
 
-       // getElementById("id-name")
+        // getElementById("id-name")******************************************
         var res=document.getElementById("show");
         document.write(res +"<br>");
         var ans = document.getElementById("greek");
         document.write(ans);
         console.log(ans);
+
+        // getElementByTagName("Tag-Name")*************************
+        var an = document.getElementsByTagName("p");
+        document.write(an + "<br>");
+        console.log(an);
+
+        // //or write like that type
+
+        //document.write(document.getElementsByTagName("*"));   
+        console.log(document.getElementsByTagName("*"));      // collect all tag on html page
+
+        //document.write(document.body.getElementsByTagName("*"));   
+        console.log(document.body.getElementsByTagName("*"));     // collect all tag on body tag
+
+        //find unique name with using id****
+
+        var s=document.getElementById("greek");
+        var n=s.getElementsByTagName("span");
+        console.log(n);
+        // //or write like this
+        var a = document.getElementById("greek").getElementsByTagName("span");
+        document.write(a);
+        console.log(a);
+        //or direct no how many tag are used in given tag id
+        console.log(document.getElementById("greek").getElementsByTagName("*"));
+
+
+        // find length of tag**********************
+
+        document.write(document.getElementsByTagName("p").length +"<br>") ;
+
+        //or
+
+        var result=document.getElementsByTagName("p").length;
+        document.write(result + "<br>");
+
+        console.log(document.getElementsByTagName("p").length )+"<br>" ;
+
+        //find length using loop*******************
+
+        var len=document.getElementsByTagName("p").length;
+        for(let i=0;i<len;i++){
+            var ans=document.getElementsByTagName("p")[i];
+            document.write(ans + "<br>");
+            console.log(ans);
+
+        }
+
+
+
     </script>
 
 </body>
