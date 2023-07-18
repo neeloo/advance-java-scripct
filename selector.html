@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="geek">queryselector</title>
+</head>
+<body>
+    <h1>learing js</h1>
+    <p class="myclass"><span>bye</span> java script</p>
+    <p class="geek">this is geek</p>
+    <div id="show">
+        <p>my learing start</p>
+        <p class="geek"> it is important</p>
+    </div>
+    <p id="show1"> this is end
+        <span class="myname">nothing is all</span>
+        <em>not</em>
+        <span>all is well</span>
+    </p>
+    <h3 id="show2">this is h3</h3>
+
+
+    <script>
+        //element selector
+        // var ans=document.querySelector("p");
+        var ans=document.querySelectorAll("p,h1");  //we can select multiple value in all the selector
+        document.write(ans+"<br>");
+        console.log(ans);
+      
+        //Id selector
+        var ans=document.querySelector("#show");
+        document.write(ans+"<br>");
+        console.log(ans);
+
+        // class selector
+        //var ans=document.querySelector(".geek");
+        var ans=document.querySelector(".geek,.myclass");
+        document.write(ans+"<br>");
+        console.log(ans);
+   /// attritebute selector
+        var ans=document.querySelector("div[id]");
+        document.write(ans+"<br>");
+        console.log(ans);
+
+        // we can pass multiple selector in var like this
+        var n=document.querySelectorAll("p,#show,.myclass");
+        document.write(n);
+        console.log(n);
+
+        //mpre specifice of selector***
+        var a=document .getElementById("show1");
+        var ans=a.querySelectorAll("span.myname");
+        document.write(ans + "<br>");
+        console.log(ans);
+
+
+        //length of selector
+        var len=document .querySelectorAll(".geek").length;
+        document.write(len);
+        console.log(len);
+
+        //using loop
+        for(let i=0;i<len;i++){
+            var ans=document.querySelectorAll(".geek")[i];
+            console.log(ans);
+            document.write(ans +"<br>");
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
