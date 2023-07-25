@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="myid"> We are learning Js</h1>
+    <h2 id="myid3"> nothing is life <!-- this is comment --> </h2>
+    <p id="myid1"> i am paragraph</p>
+
+
+    <script>
+        //Doocument
+
+        document.write("-----------Document--------" + "<br>");
+        document.write(document.nodeName + "<br>");
+        document.write(document.nodeValue + "<br>");
+        document.write(document.nodeType + "<br>");
+        console.log(document.nodeName);
+        console.log(document.nodeValue);
+        console.log(document.nodeType);
+
+        //element
+        document.write("-----------Element--------" + "<br>");
+        var ele = document.getElementById("myid");
+        document.write(ele.nodeName + "<br>");
+        document.write(ele.nodeValue + "<br>");
+        document.write(ele.nodeType + "<br>");
+        console.log(ele.nodeName);
+        console.log(ele.nodeValue);
+        console.log(ele.nodeType);
+
+        //text
+        document.write("-----------Element--------" + "<br>");
+        var txt = document.getElementById("myid3");
+        document.write(txt.firstChild.nodeName + "<br>");
+        document.write(txt.firstChild.nodeValue + "<br>");
+        document.write(txt.firstChild.nodeType + "<br>");
+        console.log(txt.firstChild.nodeName);
+        console.log(txt.firstChild.nodeValue);
+        console.log(txt.firstChild.nodeType);
+
+        //Comment
+        document.write(txt.firstChild.nextSibling.nodeName + "<br>");
+        document.write(txt.firstChild.nextSibling.nodeValue + "<br>");
+        document.write(txt.firstChild.nextSibling.nodeType + "<br>");
+        console.log(txt.nextSibling.nodeName);
+        console.log(txt.nextSibling.nodeValue);
+        console.log(txt.nextSibling.nodeType);
+
+        //text assecs
+        document.write("-----------text acces--------" + "<br>");
+        var txt = document.getElementById("myid3");
+        document.write(txt.firstChild.nodeValue + "<br>");
+        //or
+        document.write(document.getElementById("myid3").firstChild.nodeValue);
+
+        //change the value
+        //document.getElementById("myid").firstChild.nodeValue="This is my new Text";
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
