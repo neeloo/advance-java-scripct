@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute</title>
+</head>
+<body>
+    <h1 id="myid" class="not"> We are learning Js</h1>
+    <h2 id="myid3"> nothing is life <!-- this is comment --> </h2>
+    <p id="myid1"> i am paragraph</p>
+
+    <script>
+        //attribute property  name and value
+
+        //name
+        var a=document.getElementById("myid");
+        var b=a.attributes[0].nodeName;
+        document.write(b +"<br>");
+        //or
+        document.write(a.attributes[0].nodeName +"<br>");
+
+        document.write(a.attributes[1].nodeName +"<br>");
+        //or
+        document.write(a.attributes[1].name +"<br>");
+
+
+        
+        //value
+        var a=document.getElementById("myid");
+        var b=a.attributes[0].nodeValue;
+        document.write(b +"<br>");
+        //or
+        document.write(a.attributes[0].nodeName +"<br>");
+
+        document.write(a.attributes[1].nodeValue +"<br>");
+        //or
+        document.write(a.attributes[1].value +"<br>");
+
+
+        //length
+        document.write(document.getElementById("myid").attributes.length);
+
+
+        
+    </script>
+
+</body>
+</html>
