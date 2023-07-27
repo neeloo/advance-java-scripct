@@ -1,4 +1,5 @@
-//scopersone**************
+//scope**************
+
 // let a = 10;
 // function outer() {
 //     let b = 20;
@@ -108,7 +109,7 @@ person2.getFullName = function () {
 }
 console.log(person2.getFullName());
 
-   // or use this  prototype
+   //   prototype******************
 person.prototype.getFullName = function () {
     return this.firstname + ' ' + this.lastname
 }
